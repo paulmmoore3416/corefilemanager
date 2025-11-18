@@ -18,28 +18,28 @@ function AIUtilities() {
   }, []);
 
   return (
-    <div className="w-64 border-l p-4 gh-surface gh-text gh-bordered">
-      <h3 className="text-lg font-bold mb-4">AI Utilities</h3>
-      <div className="mb-4">
-        <h4 className="font-semibold">System Stats</h4>
-        <p>CPU: {stats.cpu}%</p>
-        <p>Memory: {stats.memory}%</p>
-      </div>
-      <div className="mb-4">
-        <h4 className="font-semibold">AI Tools</h4>
-        <button className="w-full mb-2 px-3 py-1 bg-gh-accent text-white rounded hover:opacity-90">
-          Analyze Files
-        </button>
-        <button className="w-full mb-2 px-3 py-1 bg-gh-accent text-white rounded hover:opacity-90">
-          Smart Search
-        </button>
-        <button className="w-full px-3 py-1 bg-gh-accent text-white rounded hover:opacity-90">
-          AI Assistant
-        </button>
-      </div>
-      <div>
-        <h4 className="font-semibold">Personal AI</h4>
-        <p className="text-sm text-gray-600">Link your personal AI here for enhanced file management.</p>
+    <div className="w-64 gh-sidebar gh-text p-6">
+      <h3 className="text-xl font-bold mb-6 gh-text">AI Utilities</h3>
+      <div className="gh-grid gh-grid-auto space-y-4">
+        <div className="gh-surface gh-rounded p-4 gh-shadow">
+          <h4 className="font-semibold mb-3 gh-text">System Stats</h4>
+          <div className="space-y-2">
+            <p className="gh-text">CPU: {stats.cpu}%</p>
+            <p className="gh-text">Memory: {stats.memory}%</p>
+          </div>
+        </div>
+        <div className="gh-surface gh-rounded p-4 gh-shadow">
+          <h4 className="font-semibold mb-3 gh-text">AI Tools</h4>
+          <div className="space-y-2">
+            <button className="w-full gh-button">Analyze Files</button>
+            <button className="w-full gh-button">Smart Search</button>
+            <button className="w-full gh-button">AI Assistant</button>
+          </div>
+        </div>
+        <div className="gh-surface gh-rounded p-4 gh-shadow">
+          <h4 className="font-semibold mb-3 gh-text">Personal AI</h4>
+          <p className="text-sm gh-muted">Link your personal AI here for enhanced file management.</p>
+        </div>
       </div>
     </div>
   );

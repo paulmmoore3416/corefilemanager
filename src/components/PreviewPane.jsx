@@ -21,20 +21,20 @@ function PreviewPane({ selectedFile }) {
 
   if (!selectedFile) {
     return (
-      <div className="w-96 border-l p-4 gh-surface gh-text gh-bordered">
-        <h3 className="text-lg font-bold">Preview</h3>
-        <p>Select a file to preview</p>
+      <div className="w-96 border-l gh-border p-6 gh-surface gh-text">
+        <h3 className="text-xl font-bold mb-4 gh-text">Preview</h3>
+        <p className="gh-muted">Select a file to preview</p>
       </div>
     );
   }
 
   return (
-    <div className="w-96 bg-white border-l p-4 overflow-y-auto">
-      <h3 className="text-lg font-bold mb-2">{selectedFile.name}</h3>
+    <div className="w-96 gh-surface border-l gh-border p-6 overflow-y-auto">
+      <h3 className="text-xl font-bold mb-4 gh-text">{selectedFile.name}</h3>
       {selectedFile.isDirectory ? (
-        <p>This is a directory</p>
+        <p className="gh-muted">This is a directory</p>
       ) : (
-        <pre className="text-sm whitespace-pre-wrap gh-text">{content}</pre>
+        <pre className="text-sm whitespace-pre-wrap gh-text bg-gray-50 p-4 rounded gh-rounded">{content}</pre>
       )}
     </div>
   );

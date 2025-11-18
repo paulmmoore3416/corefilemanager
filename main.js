@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const fs = require('fs');
+const { exec } = require('child_process');
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -13,6 +14,7 @@ function createWindow() {
     }
   });
 
+  // Load the built React app
   win.loadFile('dist/index.html');
 }
 
@@ -63,4 +65,16 @@ ipcMain.handle('get-system-stats', async () => {
     cpu: cpu.currentLoad.toFixed(2),
     memory: ((mem.used / mem.total) * 100).toFixed(2)
   };
+});
+
+ipcMain.handle('run-command', async (event, command) => {
+  return new Promise((resolve, reject) => {
+    exec(command, { cwd: process.cwd() }, (error, stdout, stderr) => {
+      if (error) {
+        reject(new Error(stderr || error.message));
+      } else {
+        resolve(stdout || 'Command executed successfully');
+      }
+    });
+  });
 });

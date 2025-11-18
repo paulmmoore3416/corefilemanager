@@ -8,21 +8,29 @@ function Toolbar({ currentDir, setCurrentDir }) {
   };
 
   return (
-    <div className="border-b p-2 flex items-center gh-surface gh-text gh-bordered">
-      <button 
-        className="mr-2 px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
-        onClick={handleBack}
-      >
-        Back
-      </button>
-      <span className="flex-1 gh-muted">{currentDir}</span>
-      <button className="mr-2 px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600">
-        New Folder
-      </button>
-      <button className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600">
-        Delete
-      </button>
-      <div className="ml-2">
+    <div className="flex items-center justify-between w-full">
+      <div className="flex items-center space-x-3">
+        <button 
+          className="gh-button"
+          onClick={handleBack}
+          title="Go Back"
+        >
+          ← Back
+        </button>
+        <span className="flex-1 gh-text font-medium text-lg">{currentDir}</span>
+      </div>
+      <div className="flex items-center space-x-3">
+        <button className="gh-button" title="New Folder">
+          📁 New Folder
+        </button>
+        <button className="gh-button" title="Delete">
+          🗑️ Delete
+        </button>
+        <input 
+          type="text" 
+          placeholder="Search..." 
+          className="px-4 py-2 border gh-border rounded gh-rounded gh-surface gh-text" 
+        />
         <ThemeToggle />
       </div>
     </div>

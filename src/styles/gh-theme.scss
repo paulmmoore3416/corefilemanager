@@ -1,25 +1,16 @@
-/* GitHub Gray Theme - CSS variables + utility classes */
+/* GitHub Dark Gray Theme - CSS variables + utility classes */
 :root {
-  --gh-bg: #f6f8fa; /* page background */
-  --gh-surface: #ffffff; /* surface like cards */
-  --gh-muted: #6a737d; /* muted text */
-  --gh-text: #24292f; /* primary text */
-  --gh-border: #e1e4e8; /* borders */
-  --gh-accent: #0366d6; /* github blue */
-  --gh-sidebar: #f6f8fa; /* sidebar bg */
-  --gh-shadow: rgba(27,31,35,0.08);
-}
-
-/* Dark variant can reuse variable names by applying a body class */
-.theme-gh-gray {
-  --gh-bg: #0d1117; /* dark page background */
-  --gh-surface: #0d1117; /* using same for subtle look */
-  --gh-muted: #8b949e;
-  --gh-text: #c9d1d9;
-  --gh-border: #30363d;
-  --gh-accent: #58a6ff;
-  --gh-sidebar: #0b1220;
+  --gh-bg: #0d1117; /* page background */
+  --gh-surface: #161b22; /* surface like cards */
+  --gh-muted: #8b949e; /* muted text */
+  --gh-text: #f0f6fc; /* primary text */
+  --gh-border: #30363d; /* borders */
+  --gh-accent: #58a6ff; /* github blue */
+  --gh-sidebar: #0d1117; /* sidebar bg */
   --gh-shadow: rgba(2,6,23,0.6);
+  --gh-header: #161b22; /* header bar */
+  --gh-selected: #58a6ff; /* selected item */
+  --gh-hover: rgba(88,166,255,0.1); /* hover */
 }
 
 /* Utilities */
@@ -30,11 +21,84 @@
 .gh-border { border-color: var(--gh-border); }
 .gh-accent { color: var(--gh-accent); }
 
-.gh-shadow { box-shadow: 0 1px 3px var(--gh-shadow); }
+.gh-shadow { box-shadow: 0 2px 8px var(--gh-shadow); }
 
-/* Component specific look */
-.gh-sidebar { background: var(--gh-sidebar); color: var(--gh-text); }
-.gh-item:hover { background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0)); }
+.gh-header {
+  background: var(--gh-header);
+  border-bottom: 1px solid var(--gh-border);
+  padding: 16px;
+}
 
-/* Provide subtle borders */
-.gh-bordered { border: 1px solid var(--gh-border); }
+.gh-sidebar {
+  background: var(--gh-sidebar);
+  border-right: 1px solid var(--gh-border);
+  padding: 16px;
+}
+
+.gh-item {
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.gh-item:hover {
+  background: var(--gh-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px var(--gh-shadow);
+}
+
+.gh-button {
+  background: var(--gh-surface);
+  border: 1px solid var(--gh-border);
+  border-radius: 8px;
+  padding: 12px 18px;
+  color: var(--gh-text);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.gh-button:hover {
+  background: var(--gh-hover);
+  border-color: var(--gh-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px var(--gh-shadow);
+}
+
+.gh-button:active {
+  background: var(--gh-accent);
+  color: var(--gh-bg);
+  transform: translateY(0);
+}
+
+.gh-selected {
+  background: var(--gh-selected);
+  color: var(--gh-bg);
+  box-shadow: 0 6px 16px var(--gh-shadow);
+}
+
+/* Rounded corners */
+.gh-rounded { border-radius: 8px; }
+
+/* Status bar */
+.gh-status {
+  background: var(--gh-surface);
+  border-top: 1px solid var(--gh-border);
+  padding: 10px 16px;
+  font-size: 14px;
+  color: var(--gh-muted);
+}
+
+/* Modern Grid Layouts */
+.gh-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.gh-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.gh-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.gh-grid-4 { grid-template-columns: repeat(4, 1fr); }
+.gh-grid-auto { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }

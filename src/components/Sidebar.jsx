@@ -10,37 +10,45 @@ function Sidebar({ setCurrentDir }) {
   }, []);
 
   return (
-    <div className="w-64 p-4 gh-sidebar gh-surface gh-bordered">
-      <h2 className="text-lg font-bold mb-4">CoreManager</h2>
-      <div className="mb-4">
-        <h3 className="text-sm font-semibold mb-2">Drives</h3>
-        {drives.map(drive => (
-          <div 
-            key={drive} 
-            className="cursor-pointer p-2 rounded gh-item gh-text gh-bordered"
-            onClick={() => setCurrentDir(drive)}
-          >
-            {drive}
+    <div className="w-64 gh-sidebar gh-text">
+      <h2 className="text-xl font-bold mb-6 gh-text">CoreManager</h2>
+      <div className="gh-grid gh-grid-auto">
+        <div className="gh-surface gh-rounded p-4 gh-shadow">
+          <h3 className="text-lg font-semibold mb-3 gh-text">Drives</h3>
+          <div className="space-y-2">
+            {drives.map(drive => (
+              <div 
+                key={drive} 
+                className="gh-item gh-text"
+                onClick={() => setCurrentDir(drive)}
+              >
+                💾 {drive}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <div className="mb-4">
-        <h3 className="text-sm font-semibold mb-2">Favorites</h3>
-        {favorites.map(fav => (
-          <div 
-            key={fav} 
-            className="cursor-pointer p-2 rounded gh-item gh-text gh-bordered"
-            onClick={() => setCurrentDir(fav)}
-          >
-            {fav}
+        </div>
+        <div className="gh-surface gh-rounded p-4 gh-shadow">
+          <h3 className="text-lg font-semibold mb-3 gh-text">Favorites</h3>
+          <div className="space-y-2">
+            {favorites.map(fav => (
+              <div 
+                key={fav} 
+                className="gh-item gh-text"
+                onClick={() => setCurrentDir(fav)}
+              >
+                ⭐ {fav}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <div>
-        <h3 className="text-sm font-semibold mb-2">Extensions</h3>
-        <div className="cursor-pointer p-2 rounded gh-item gh-text gh-bordered">Docker</div>
-        <div className="cursor-pointer p-2 rounded gh-item gh-text gh-bordered">SSH</div>
-        <div className="cursor-pointer p-2 rounded gh-item gh-text gh-bordered">Monitor</div>
+        </div>
+        <div className="gh-surface gh-rounded p-4 gh-shadow">
+          <h3 className="text-lg font-semibold mb-3 gh-text">Extensions</h3>
+          <div className="space-y-2">
+            <div className="gh-item gh-text">🐳 Docker</div>
+            <div className="gh-item gh-text">🔐 SSH</div>
+            <div className="gh-item gh-text">📊 Monitor</div>
+          </div>
+        </div>
       </div>
     </div>
   );
