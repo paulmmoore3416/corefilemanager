@@ -25,7 +25,7 @@
 > **A professional-grade, AI-enhanced file manager built with Java, JavaFX, React, and modern web technologies. Designed for power users who demand elegance, performance, and extensibility.**
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/coremanager/main/assets/screenshot.png" alt="CoreManager Screenshot" width="800"/>
+   <img src="assets/screenshot.png" alt="CoreManager Screenshot" width="800"/>
 </div>
 
 ---
@@ -35,6 +35,7 @@
 ### 🎨 **Modern UI/UX**
 - **Responsive Design**: Built with TailwindCSS and custom SCSS for a sleek, professional interface
 - **Dark/Light Themes**: Switch between themes with custom branding
+ - **Dark/Light Themes**: Toggle the **GitHub Gray** theme for a polished GitHub-like look
 - **Intuitive Navigation**: Sidebar with drives, favorites, and extension panels
 
 ### 🤖 **AI-Powered Utilities**
@@ -48,6 +49,14 @@
 - **Batch Operations**: Rename, move, compress multiple files at once
 - **Secure Admin Tools**: Sandboxed terminal with restricted command execution
 - **Plugin System**: Extensible architecture for Docker, SSH, and custom tools
+
+---
+
+### 🎨 GitHub Gray Theme
+
+CoreManager ships with a GitHub-inspired gray theme. Toggle it from the top toolbar ("🖤 Theme") and the application will swap variables to give a consistent GitHub-style palette for backgrounds, text, and borders.
+
+Use this theme to match GitHub's neutral, professional visual identity when browsing repositories or code.
 
 ### 🛠️ **System Integration**
 - **Cross-Platform**: Runs on Linux, Windows, and macOS

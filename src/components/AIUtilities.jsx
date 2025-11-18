@@ -18,7 +18,7 @@ function AIUtilities() {
   }, []);
 
   return (
-    <div className="w-64 bg-gray-50 border-l p-4">
+    <div className="w-64 border-l p-4 gh-surface gh-text gh-bordered">
       <h3 className="text-lg font-bold mb-4">AI Utilities</h3>
       <div className="mb-4">
         <h4 className="font-semibold">System Stats</h4>
@@ -27,13 +27,13 @@ function AIUtilities() {
       </div>
       <div className="mb-4">
         <h4 className="font-semibold">AI Tools</h4>
-        <button className="w-full mb-2 px-3 py-1 bg-purple-500 text-white rounded hover:bg-purple-600">
+        <button className="w-full mb-2 px-3 py-1 bg-gh-accent text-white rounded hover:opacity-90">
           Analyze Files
         </button>
-        <button className="w-full mb-2 px-3 py-1 bg-purple-500 text-white rounded hover:bg-purple-600">
+        <button className="w-full mb-2 px-3 py-1 bg-gh-accent text-white rounded hover:opacity-90">
           Smart Search
         </button>
-        <button className="w-full px-3 py-1 bg-purple-500 text-white rounded hover:bg-purple-600">
+        <button className="w-full px-3 py-1 bg-gh-accent text-white rounded hover:opacity-90">
           AI Assistant
         </button>
       </div>

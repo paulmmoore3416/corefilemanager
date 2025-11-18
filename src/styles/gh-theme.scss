@@ -1,0 +1,40 @@
+/* GitHub Gray Theme - CSS variables + utility classes */
+:root {
+  --gh-bg: #f6f8fa; /* page background */
+  --gh-surface: #ffffff; /* surface like cards */
+  --gh-muted: #6a737d; /* muted text */
+  --gh-text: #24292f; /* primary text */
+  --gh-border: #e1e4e8; /* borders */
+  --gh-accent: #0366d6; /* github blue */
+  --gh-sidebar: #f6f8fa; /* sidebar bg */
+  --gh-shadow: rgba(27,31,35,0.08);
+}
+
+/* Dark variant can reuse variable names by applying a body class */
+.theme-gh-gray {
+  --gh-bg: #0d1117; /* dark page background */
+  --gh-surface: #0d1117; /* using same for subtle look */
+  --gh-muted: #8b949e;
+  --gh-text: #c9d1d9;
+  --gh-border: #30363d;
+  --gh-accent: #58a6ff;
+  --gh-sidebar: #0b1220;
+  --gh-shadow: rgba(2,6,23,0.6);
+}
+
+/* Utilities */
+.gh-bg { background: var(--gh-bg); }
+.gh-surface { background: var(--gh-surface); }
+.gh-text { color: var(--gh-text); }
+.gh-muted { color: var(--gh-muted); }
+.gh-border { border-color: var(--gh-border); }
+.gh-accent { color: var(--gh-accent); }
+
+.gh-shadow { box-shadow: 0 1px 3px var(--gh-shadow); }
+
+/* Component specific look */
+.gh-sidebar { background: var(--gh-sidebar); color: var(--gh-text); }
+.gh-item:hover { background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0)); }
+
+/* Provide subtle borders */
+.gh-bordered { border: 1px solid var(--gh-border); }

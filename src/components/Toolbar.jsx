@@ -1,4 +1,5 @@
 import React from 'react';
+import ThemeToggle from './ThemeToggle';
 
 function Toolbar({ currentDir, setCurrentDir }) {
   const handleBack = () => {
@@ -21,6 +22,9 @@ function Toolbar({ currentDir, setCurrentDir }) {
       <button className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600">
         Delete
       </button>
+      <div className="ml-2">
+        <ThemeToggle />
+      </div>
     </div>
   );
 }

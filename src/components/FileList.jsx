@@ -25,14 +25,14 @@ function FileList({ currentDir, setCurrentDir, setSelectedFile }) {
   };
 
   return (
-    <div className="flex-1 bg-white overflow-y-auto">
+    <div className="flex-1 overflow-y-auto gh-bg gh-text">
       <div className="p-4">
         <h2 className="text-lg font-bold mb-4">Files in {currentDir}</h2>
         <div className="grid grid-cols-1 gap-2">
           {files.map(file => (
             <div 
               key={file.path} 
-              className="flex items-center p-2 hover:bg-gray-100 cursor-pointer rounded"
+              className="flex items-center p-2 cursor-pointer rounded gh-item gh-bordered"
               onClick={() => handleFileClick(file)}
             >
               <span className="mr-2">{file.isDirectory ? '📁' : '📄'}</span>

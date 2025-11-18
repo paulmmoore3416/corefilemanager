@@ -10,14 +10,14 @@ function Sidebar({ setCurrentDir }) {
   }, []);
 
   return (
-    <div className="w-64 bg-gray-800 text-white p-4">
+    <div className="w-64 p-4 gh-sidebar gh-surface gh-bordered">
       <h2 className="text-lg font-bold mb-4">CoreManager</h2>
       <div className="mb-4">
         <h3 className="text-sm font-semibold mb-2">Drives</h3>
         {drives.map(drive => (
           <div 
             key={drive} 
-            className="cursor-pointer hover:bg-gray-700 p-2 rounded"
+            className="cursor-pointer p-2 rounded gh-item gh-text gh-bordered"
             onClick={() => setCurrentDir(drive)}
           >
             {drive}
@@ -29,7 +29,7 @@ function Sidebar({ setCurrentDir }) {
         {favorites.map(fav => (
           <div 
             key={fav} 
-            className="cursor-pointer hover:bg-gray-700 p-2 rounded"
+            className="cursor-pointer p-2 rounded gh-item gh-text gh-bordered"
             onClick={() => setCurrentDir(fav)}
           >
             {fav}
@@ -38,9 +38,9 @@ function Sidebar({ setCurrentDir }) {
       </div>
       <div>
         <h3 className="text-sm font-semibold mb-2">Extensions</h3>
-        <div className="cursor-pointer hover:bg-gray-700 p-2 rounded">Docker</div>
-        <div className="cursor-pointer hover:bg-gray-700 p-2 rounded">SSH</div>
-        <div className="cursor-pointer hover:bg-gray-700 p-2 rounded">Monitor</div>
+        <div className="cursor-pointer p-2 rounded gh-item gh-text gh-bordered">Docker</div>
+        <div className="cursor-pointer p-2 rounded gh-item gh-text gh-bordered">SSH</div>
+        <div className="cursor-pointer p-2 rounded gh-item gh-text gh-bordered">Monitor</div>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ function PreviewPane({ selectedFile }) {
 
   if (!selectedFile) {
     return (
-      <div className="w-96 bg-white border-l p-4">
+      <div className="w-96 border-l p-4 gh-surface gh-text gh-bordered">
         <h3 className="text-lg font-bold">Preview</h3>
         <p>Select a file to preview</p>
       </div>
@@ -34,7 +34,7 @@ function PreviewPane({ selectedFile }) {
       {selectedFile.isDirectory ? (
         <p>This is a directory</p>
       ) : (
-        <pre className="text-sm whitespace-pre-wrap">{content}</pre>
+        <pre className="text-sm whitespace-pre-wrap gh-text">{content}</pre>
       )}
     </div>
   );

@@ -1,13 +1,12 @@
 $primary-color: #2d89ef;
 
+/* Keep previous custom variables but move to GitHub theme where possible */
 .sidebar {
-  background: $primary-color;
-  color: white;
   padding: 1rem;
 }
 
 .file-item {
   &:hover {
-    background: lighten($primary-color, 20%);
+    background: rgba(0, 0, 0, 0.03);
   }
 }
