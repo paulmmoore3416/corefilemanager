@@ -1,0 +1,13 @@
+$primary-color: #2d89ef;
+
+.sidebar {
+  background: $primary-color;
+  color: white;
+  padding: 1rem;
+}
+
+.file-item {
+  &:hover {
+    background: lighten($primary-color, 20%);
+  }
+}

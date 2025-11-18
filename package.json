@@ -1,0 +1,35 @@
+{
+  "name": "coremanager",
+  "version": "1.0.0",
+  "description": "Top tier file manager with AI utilities",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "electron": "^25.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "systeminformation": "^5.21.0",
+    "pdfjs-dist": "^3.11.174",
+    "react-player": "^2.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-react": "^7.22.0",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.8.0",
+    "sass": "^1.69.0",
+    "sass-loader": "^13.3.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.0",
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "html-webpack-plugin": "^5.5.0"
+  }
+}
