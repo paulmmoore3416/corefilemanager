@@ -37,7 +37,7 @@ function FileList({ currentDir, setCurrentDir, setSelectedFile }) {
             >
               <span className="mr-2">{file.isDirectory ? '📁' : '📄'}</span>
               <span className="flex-1">{file.name}</span>
-              <span className="text-sm text-gray-500">
+              <span className="text-sm gh-muted">
                 {file.isDirectory ? '' : `${(file.size / 1024).toFixed(1)} KB`}
               </span>
             </div>
