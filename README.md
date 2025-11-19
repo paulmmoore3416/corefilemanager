@@ -29,6 +29,8 @@
 
 <div align="center">
    <img src="assets/Xplorer_2-compressed.jpg" alt="CoreManager Screenshot" width="800"/>
+</div>
+
 ## 📊 Metrics & Graphs
 
 Visual metrics help make the repository noticeable and informative at a glance. Below is a simple sample graph (auto generated placeholder) showing CPU/memory/disk/network metrics which the AI panel displays in the live app.
@@ -39,8 +41,6 @@ Visual metrics help make the repository noticeable and informative at a glance. 
 
 We also provide automated badges for CI status, stars, forks and issues so visitors can quickly assess the health of the repository.
 
-</div>
-
 ---
 
 ## ✨ **Key Features**
@@ -48,7 +48,7 @@ We also provide automated badges for CI status, stars, forks and issues so visit
 ### 🎨 **Modern UI/UX**
 - **Responsive Design**: Built with TailwindCSS and custom SCSS for a sleek, professional interface
 - **Dark/Light Themes**: Switch between themes with custom branding
- - **Dark/Light Themes**: Toggle the **GitHub Gray** theme for a polished GitHub-like look
+- **GitHub Gray Theme**: Toggle the **GitHub Gray** theme for a polished GitHub-like look
 - **Intuitive Navigation**: Sidebar with drives, favorites, and extension panels
 
 ### 🤖 **AI-Powered Utilities**
@@ -62,14 +62,6 @@ We also provide automated badges for CI status, stars, forks and issues so visit
 - **Batch Operations**: Rename, move, compress multiple files at once
 - **Secure Admin Tools**: Sandboxed terminal with restricted command execution
 - **Plugin System**: Extensible architecture for Docker, SSH, and custom tools
-
----
-
-### 🎨 GitHub Gray Theme
-
-CoreManager ships with a GitHub-inspired gray theme. Toggle it from the top toolbar ("🖤 Theme") and the application will swap variables to give a consistent GitHub-style palette for backgrounds, text, and borders.
-
-Use this theme to match GitHub's neutral, professional visual identity when browsing repositories or code.
 
 ### 🛠️ **System Integration**
 - **Cross-Platform**: Runs on Linux, Windows, and macOS
@@ -108,6 +100,28 @@ CoreManager/
 | **Build System** | Maven + Webpack | Dependency management and bundling |
 | **File Operations** | Node.js APIs | Secure filesystem access |
 | **AI Integration** | Custom APIs | Extensible AI utilities |
+
+---
+
+## 📈 **Project Summary & LinkedIn Overview**
+
+**CoreManager** is a cutting-edge file management application that combines the power of desktop-native performance with modern web technologies. As a full-stack developer, I leveraged my expertise in Java, React, and cross-platform development to create an intuitive, AI-enhanced tool for power users.
+
+### 💼 **Professional Experience Highlights**
+- **Architected a hybrid desktop-web application** using JavaFX and React, demonstrating proficiency in bridging native and web ecosystems.
+- **Implemented responsive UI/UX** with TailwindCSS and custom SCSS, ensuring a professional, GitHub-inspired aesthetic.
+- **Integrated AI-powered features** for intelligent file analysis and system monitoring, showcasing innovation in user experience.
+- **Developed cross-platform compatibility** for Linux, Windows, and macOS, highlighting expertise in multi-platform software engineering.
+
+### 🛠️ **Skills Demonstrated**
+- **Programming Languages**: Java, JavaScript (ES6+), HTML5, CSS3
+- **Frameworks & Libraries**: JavaFX, React, TailwindCSS, SCSS
+- **Tools & Technologies**: Maven, Webpack, Node.js, GitHub Actions, jpackage
+- **Concepts**: Cross-Platform Development, AI Integration, Plugin Architecture, System Monitoring, File System Operations
+- **Soft Skills**: UI/UX Design, Performance Optimization, Security Best Practices, Open Source Collaboration
+
+### 🌟 **Industry Applications**
+This project exemplifies skills in **Software Development**, **Desktop Application Engineering**, **AI/ML Integration**, and **Open Source Software**. It's particularly relevant for industries like **Technology**, **Enterprise Software**, **Productivity Tools**, and **Developer Tools**.
 
 ---
 
@@ -281,7 +295,19 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For support, email support@coremanager.com or join our Discord community.
 
+---
+
+## 🔗 **Connect & Collaborate**
+
 <div align="center">
+  <h3>💼 **Skills & Technologies**</h3>
+  <p>
+    <strong>Programming:</strong> #Java #JavaFX #React #JavaScript #HTML5 #CSS3<br>
+    <strong>Tools:</strong> #Maven #Webpack #NodeJS #GitHubActions #TailwindCSS #SCSS<br>
+    <strong>Concepts:</strong> #CrossPlatform #AIIntegration #DesktopApps #FileManagement #SystemMonitoring<br>
+    <strong>Industries:</strong> #SoftwareDevelopment #EnterpriseSoftware #ProductivityTools #DeveloperTools #OpenSource
+  </p>
+  <br>
   <h3>⭐ Star this repo if you find it useful!</h3>
   <p>Made with ❤️ by the CoreManager team</p>
 </div>
