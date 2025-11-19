@@ -14,7 +14,10 @@
   <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey?style=for-the-badge" alt="Platform"/>
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"/>
   <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" alt="Version"/>
-   <img src="https://img.shields.io/github/actions/workflow/status/yourusername/coremanager/ci.yml?branch=main&style=for-the-badge" alt="CI Build"/>
+   <img src="https://img.shields.io/github/actions/workflow/status/paulmmoore3416/corefilemanager/ci.yml?branch=main&style=for-the-badge" alt="CI Build"/>
+   <img src="https://img.shields.io/github/stars/paulmmoore3416/corefilemanager?style=for-the-badge" alt="Stars"/>
+   <img src="https://img.shields.io/github/forks/paulmmoore3416/corefilemanager?style=for-the-badge" alt="Forks"/>
+   <img src="https://img.shields.io/github/issues/paulmmoore3416/corefilemanager?style=for-the-badge" alt="Issues"/>
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status"/>
 </div>
 
@@ -25,7 +28,17 @@
 > **A professional-grade, AI-enhanced file manager built with Java, JavaFX, React, and modern web technologies. Designed for power users who demand elegance, performance, and extensibility.**
 
 <div align="center">
-   <img src="assets/screenshot.png" alt="CoreManager Screenshot" width="800"/>
+   <img src="assets/Xplorer_2-compressed.jpg" alt="CoreManager Screenshot" width="800"/>
+## 📊 Metrics & Graphs
+
+Visual metrics help make the repository noticeable and informative at a glance. Below is a simple sample graph (auto generated placeholder) showing CPU/memory/disk/network metrics which the AI panel displays in the live app.
+
+<div align="center">
+   <img src="assets/metrics.svg" alt="CoreManager metrics" width="680"/>
+</div>
+
+We also provide automated badges for CI status, stars, forks and issues so visitors can quickly assess the health of the repository.
+
 </div>
 
 ---
@@ -109,7 +122,7 @@ CoreManager/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/coremanager.git
+   git clone https://github.com/paulmmoore3416/corefilemanager.git
    cd coremanager
    ```
 

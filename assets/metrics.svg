@@ -1,0 +1,18 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'>
+  <rect width='100%' height='100%' fill='#0d1117' />
+  <g transform='translate(30,150)'>
+    <rect x='0' y='-60' width='40' height='60' fill='#79c0ff' />
+    <rect x='60' y='-80' width='40' height='80' fill='#c9d1d9' />
+    <rect x='120' y='-40' width='40' height='40' fill='#238636' />
+    <rect x='180' y='-100' width='40' height='100' fill='#bb8009' />
+    <rect x='240' y='-20' width='40' height='20' fill='#da3633' />
+    <g fill='#8b949e' font-size='12' font-family='Arial'>
+      <text x='0' y='70'>CPU%</text>
+      <text x='60' y='70'>Memory%</text>
+      <text x='120' y='70'>I/O</text>
+      <text x='180' y='70'>Network</text>
+      <text x='240' y='70'>Latency</text>
+    </g>
+  </g>
+  <text x='30' y='30' fill='#c9d1d9' font-family='Arial' font-size='16'>CoreManager Metrics</text>
+</svg>

@@ -1,1 +1,8 @@
 node_modules
+dist-electron/
+CoreManager-*.tar.gz
+*.deb
+*.AppImage
+_build/
+target/
+src/main/resources/web/
